@@ -1,0 +1,25 @@
+{
+  "_id": "650c22881b9a2c3d4e5f6a8c",
+  "estudio_id": "EST-2026-9901",
+  "paciente_id": "901230456",
+  "cedula_paciente": "108760543",
+  "fecha_realizacion": "2026-10-05T11:15:00Z",
+  "hospital_origen": "Hospital San Juan de Dios",
+  "modalidad_imagen": "RX",
+  "nombre_estudio": "Radiografía de Tórax PA y Lateral",
+  "medico_solicitante": "Dr. Carlos Alvarado Mora (MED-4512)",
+  "radiologo_evaluador": "Dra. Sofía Vargas Castro (RAD-1102)",
+  "archivo_dicom": {
+    "soporte_storage": "Ceph Object Storage CCSS Cluster-01",
+    "uri_storage": "s3://ccss-dicom-vault/2026/10/05/108760543/EST-2026-9901.dcm",
+    "hash_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tamaño_bytes": 15485760
+  },
+  "parametros_tecnicos": {
+    "kvp": 120,
+    "mas": 4.5,
+    "equipamiento": "Siemens Ysio Max RX-02"
+  },
+  "hallazgos": "Campos pulmonares claros sin infiltrados ni consolidaciones. Silueta cardiaca de tamaño normal.",
+  "conclusion_diagnostica": "Estudio radiológico de tórax dentro de límites normales."
+}

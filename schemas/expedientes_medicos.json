@@ -1,0 +1,49 @@
+{
+  "_id": "650c1f191b9a2c3d4e5f6a7b",
+  "paciente_id": "901230456",
+  "cedula_paciente": "108760543",
+  "alergias": [
+    "Penicilina",
+    "Aspirina"
+  ],
+  "enfermedades_cronicas": [
+    "Hipertensión Arterial",
+    "Diabetes Mellitus Tipo 2"
+  ],
+  "consultas": [
+    {
+      "consulta_id": "CONS-2026-08912",
+      "fecha_hora": "2026-10-05T09:30:00Z",
+      "hospital": "Hospital San Juan de Dios",
+      "area_especialidad": "Medicina Interna",
+      "medico": {
+        "codigo_medico": "MED-4512",
+        "nombre": "Dr. Carlos Alvarado Mora"
+      },
+      "motivo_consulta": "Paciente refiere dolor torácico leve y mareos intermitentes",
+      "signos_vitales": {
+        "presion_arterial": "140/90 mmHg",
+        "frecuencia_cardiaca_bpm": 82,
+        "frecuencia_respiratoria_rpm": 18,
+        "temperatura_c": 36.8,
+        "saturacion_oxigeno_pct": 98
+      },
+      "diagnosticos": [
+        {
+          "codigo_cie10": "I10",
+          "descripcion": "Hipertensión esencial (primaria)",
+          "tipo": "Principal"
+        }
+      ],
+      "prescripciones": [
+        {
+          "medicamento": "Enalapril 20mg",
+          "dosis": "1 tableta cada 12 horas",
+          "duracion_dias": 30,
+          "farmacia_despacho": "Farmacia Central HSJD"
+        }
+      ],
+      "notas_clinicas": "Se ajusta dosis de antihipertensivo. Se solicita electrocardiograma de control."
+    }
+  ]
+}

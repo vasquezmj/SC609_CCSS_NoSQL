@@ -1,0 +1,124 @@
+{
+  "$jsonSchema": {
+    "bsonType": "object",
+    "required": [
+      "cedula",
+      "nombre_completo",
+      "fecha_nacimiento",
+      "genero",
+      "hospital_base",
+      "estado_asegurado"
+    ],
+    "properties": {
+      "_id": {
+        "bsonType": "objectId"
+      },
+      "cedula": {
+        "bsonType": "string",
+        "pattern": "^[0-9]{9}$",
+        "description": "Cédula costarricense de 9 dígitos sin guiones"
+      },
+      "nombre_completo": {
+        "bsonType": "object",
+        "required": [
+          "nombre",
+          "primer_apellido"
+        ],
+        "properties": {
+          "nombre": {
+            "bsonType": "string"
+          },
+          "primer_apellido": {
+            "bsonType": "string"
+          },
+          "segundo_apellido": {
+            "bsonType": "string"
+          }
+        }
+      },
+      "fecha_nacimiento": {
+        "bsonType": "string"
+      },
+      "genero": {
+        "enum": [
+          "M",
+          "F",
+          "Otro"
+        ]
+      },
+      "tipo_sangre": {
+        "enum": [
+          "A+",
+          "A-",
+          "B+",
+          "B-",
+          "AB+",
+          "AB-",
+          "O+",
+          "O-"
+        ]
+      },
+      "hospital_base": {
+        "bsonType": "string"
+      },
+      "estado_asegurado": {
+        "enum": [
+          "Activo",
+          "Pensionado",
+          "Indigente",
+          "Moroso"
+        ]
+      },
+      "contacto": {
+        "bsonType": "object",
+        "properties": {
+          "telefono": {
+            "bsonType": "string"
+          },
+          "correo": {
+            "bsonType": "string"
+          },
+          "direccion": {
+            "bsonType": "object",
+            "properties": {
+              "provincia": {
+                "bsonType": "string"
+              },
+              "canton": {
+                "bsonType": "string"
+              },
+              "distrito": {
+                "bsonType": "string"
+              },
+              "detalles": {
+                "bsonType": "string"
+              }
+            }
+          }
+        }
+      },
+      "contactos_emergencia": {
+        "bsonType": "array",
+        "items": {
+          "bsonType": "object",
+          "required": [
+            "nombre",
+            "parentesco",
+            "telefono"
+          ],
+          "properties": {
+            "nombre": {
+              "bsonType": "string"
+            },
+            "parentesco": {
+              "bsonType": "string"
+            },
+            "telefono": {
+              "bsonType": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}
